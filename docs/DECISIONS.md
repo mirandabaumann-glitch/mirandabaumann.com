@@ -14,3 +14,4 @@ Short record of consequential choices. Newest at the bottom.
 10. **No analytics scripts.** Cloudflare's built-in traffic statistics only.
 11. **Strict security headers** (`_headers`): no inline scripts or styles, no framing, no forms.
 12. **Publications link to DOIs.** No publisher PDFs are hosted.
+13. **Email addresses exempt from Cloudflare Email Obfuscation.** Cloudflare's default obfuscation replaced the addresses with "[email protected]" for readers without JavaScript (including search engines and AI tools). The Contact list is wrapped in `<!--email_off-->` comments so the approved, visible addresses are served as written.
