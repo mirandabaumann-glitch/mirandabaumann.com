@@ -1,0 +1,4 @@
+tests/screenshots/
+__pycache__/
+.wrangler/
+.DS_Store
