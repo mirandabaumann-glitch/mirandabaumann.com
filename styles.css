@@ -189,9 +189,9 @@ p { margin: 0 0 1rem; }
   border-radius: 0 4px 4px 0;
 }
 
-.pubs { margin: 0 0 1rem; padding-left: 1.5rem; }
-.pubs li { margin-bottom: 1rem; padding-left: 0.25rem; }
-.pubs li::marker { color: var(--muted); }
+/* Publications: unnumbered, with a hanging indent */
+.pubs { list-style: none; margin: 0 0 1rem; padding: 0; }
+.pubs li { margin-bottom: 1rem; padding-left: 1.5rem; text-indent: -1.5rem; }
 .pubs cite { font-style: italic; }
 .more { color: var(--muted); }
 

@@ -2,7 +2,7 @@
 
 Source for [mirandabaumann.com](https://mirandabaumann.com/), the personal professional website of Miranda L. Baumann, PhD.
 
-The site is a single page that explains her current role, research expertise, professional background, selected publications, profile links, and contact information. It is a personal website, not an official website of the Georgia Department of Behavioral Health and Developmental Disabilities.
+The site is a single page that explains her current role, research expertise, professional background, selected publications, and contact information. It is a personal website, not an official website of the Georgia Department of Behavioral Health and Developmental Disabilities.
 
 ## What is here
 

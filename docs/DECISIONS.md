@@ -10,7 +10,7 @@ Short record of consequential choices. Newest at the bottom.
 6. **Light and dark themes.** Follows the device setting by default. A manual choice is saved in the browser (localStorage) when allowed. The saved choice is applied in `<head>` before the page paints to avoid a flash. Without JavaScript, the toggle is hidden and the page follows the device setting.
 7. **Single purple accent.** `#5b2a86` on white and `#c9a7f0` on charcoal (both above 8:1 contrast). The only "sheen" is a thin static gradient rule under the name.
 8. **System fonts.** No web-font downloads; faster and nothing to maintain.
-9. **Structured data limited to visible facts.** Name, PhD, title, employer, university, site URL, and the three profile links.
+9. **Structured data limited to visible facts.** Name, PhD, title, employer, university, site URL, and the LinkedIn, Google Scholar, and ORCID links shown on the page.
 10. **No analytics scripts.** Cloudflare's built-in traffic statistics only.
 11. **Strict security headers** (`_headers`): no inline scripts or styles, no framing, no forms.
 12. **Publications link to DOIs.** No publisher PDFs are hosted.
