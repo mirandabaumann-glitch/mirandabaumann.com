@@ -5,6 +5,7 @@ Run from the repository root:
     python3 -m pip install playwright && python3 -m playwright install chromium
     python3 tests/check_site.py            # local checks only
     python3 tests/check_site.py --links    # also checks that outside links respond
+    python3 tests/check_site.py --url https://preview.mirandabaumann-com.pages.dev   # test a deployed copy
 
 Starts a temporary local web server, opens the page in a headless browser,
 and reports PASS/FAIL for each check. Screenshots are saved to tests/screenshots/.
@@ -167,8 +168,11 @@ def browser_checks(base):
 if __name__ == "__main__":
     static_checks()
     link_checks("--links" in sys.argv)
-    with server() as base:
-        browser_checks(base)
+    if "--url" in sys.argv:
+        browser_checks(sys.argv[sys.argv.index("--url") + 1].rstrip("/"))
+    else:
+        with server() as base:
+            browser_checks(base)
     failed = results.count(False)
     print(f"\n{len(results) - failed} passed, {failed} failed")
     sys.exit(1 if failed else 0)
